@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<title>Curriculum Vitae</title>
+	
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+	
+	<!-- FontAwesome JS-->
+	<script defer src="assets/fontawesome/js/all.min.js"></script>
+	
+	<!-- Theme CSS -->  
+	<link id="theme-style" rel="stylesheet" href="assets/css/devresume.css">
+
+</head> 
+
+
+<body>
+	
+	<div class="main-wrapper">
+		<div class="container px-3 px-lg-5">
+			<article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+				
+				<div class="resume-header">
+					<div class="row align-items-center">
+						<div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+							<h2 class="resume-name mb-0 text-uppercase">Sergey Suprun</h2>
+						</div><!--//resume-title-->
+						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+							<ul class="list-unstyled mb-0">
+								<li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>Kharkov</li>
+								<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i><a class="resume-link" href="mailto:#">serg.suprun@gmail.com</a></li>
+							</ul>
+						</div><!--//resume-contact-->
+					</div><!--//row-->
+					
+				</div><!--//resume-header-->
+				<hr>
+				<div class="resume-intro py-3">
+					<div class="media flex-column flex-md-row align-items-center">
+						<img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="assets/images/resume-profile.jpg" alt="image">
+						<div class="media-body text-left">
+							<h3 class="text-uppercase resume-section-heading mb-4">About me</h3>
+							<p class="mb-0">My name is Sergey, my goal is to become a Software Engineer.
+								Setting a goal is crucial to keep yourself on track. Also – let’s be honest – it’s much more fun learning to code when you know what you want to achieve.</p>
+						</div><!--//media-body-->
+					</div>
+				</div><!--//resume-intro-->
+				<hr>
+				<div class="resume-body">
+					<div class="row">
+						<div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
+
+							<section class="skills-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Skills</h3>
+								<div class="item">
+									<h4 class="item-title">Operating Systems</h4>
+									<ul class="list-unstyled resume-skills-list">
+										<li class="mb-2">Linux (Intermediate)</li>
+										<li class="mb-2">Windows (Intermediate)<li>
+										</ul>
+									</div><!--//item-->
+									<div class="item">
+										<h4 class="item-title">Graphic Software</h4>
+										<ul class="list-unstyled resume-skills-list">
+											<li class="mb-2">Adobe Photoshop (Intermediate)</li>
+											<li class="mb-2">Adobe InDesign (Intermediate)<li>
+											<li class="mb-2">Adobe Illustrator (Expert)</li>
+											<li class="mb-2">Prinect Signa Station (Expert)</li>
+											</ul>
+										</div><!--//item-->
+										<div class="item">
+											<h4 class="item-title">Front-end tools</h4>
+											<ul class="list-unstyled resume-skills-list">
+												<li>HTML (Beginner)</li>
+												<li>CSS (Beginner)</li>
+												<li>JavaScript (Beginner)</li>
+												<li>NPM (Beginner)</li>
+												<li>Webpack (Beginner)</li>
+											</ul>
+										</div>
+										<div class="item">
+											<h4 class="item-title">DevOps tools</h4>
+											<ul class="list-unstyled resume-skills-list">
+												<li>Git</li>
+												<li>Terraform</li>
+												<li>Ansible</li>
+												<li>Vagrant</li>
+												<li>Docker</li>
+												<li>BASH</li>
+												<li>PowerShell</li>
+											</ul>
+										</div>
+									</section><!--//skills-section-->
+
+							<section class="Code-samples-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Code samples</h3>
+								<div class="item">
+									<h4 class="item-title">FizzBuzz</h4>
+									<pre>
+<code>
+function fizzbuzz(n) {
+	let arr = []
+	for (let i = 1; i < n+1; i++) {
+	  if (i % 3 === 0 && i % 5 === 0) arr.push("FizzBuzz");
+	  else if (i % 5 === 0) arr.push("Buzz");
+	  else if (i % 3 === 0) arr.push("Fizz");
+	  else arr.push(i);
+	}
+	return arr;
+	}
+</code>
+									</pre>
+								</div>
+								<div class="item">
+									<h4 class="item-title">Shortest Word</h4>
+									<pre>
+<code>
+function findShort(s){
+	return s.split(' ').sort( (a,b) => a.length - b.length)[0].length;
+  }
+</code>
+									</pre>
+								</div>
+							</section><!--//code-samples-section-->
+
+							<section class="education-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
+								<ul class="list-unstyled resume-education-list">
+									<li class="mb-3">
+										<div class="resume-degree font-weight-bold">Kharkov Professional Printing College</div>
+										<div class="resume-degree-time text-muted">2006 - 2009</div>
+									</li>
+									<li>
+										<div class="resume-degree font-weight-bold">EPAM DevOps external course</div>
+										<div class="resume-degree-time text-muted">2020</div>
+									</li>
+								</ul>
+							</section><!--//education-section-->
+
+							<section class="work-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Experiences</h3>
+								<div class="item mb-3">
+									<div class="item-heading row align-items-center mb-2">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Print process engineer / Designer</h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Farmacia | 2018 - Present</div>
+										
+									</div>
+									<div class="item-content">
+										<p>Implementation all package development graphics/printing initiatives to maintain an efficient flow of various stages of the graphic and printing process, including resolving of scheduling conflicts.</p>
+									</div>
+								</div><!--//item-->
+								<div class="item mb-3">
+									<div class="item-heading row align-items-center mb-2">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Printing Press / Offset operator</h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Farmacia | 2011 - 2018</div>
+										
+									</div>
+									<div class="item-content">
+										<p>Responsibility for producing quality printed products within production standard guidelines and customer specifications</p>
+									</div>
+								</div><!--//item-->
+							</section><!--//work-section-->
+
+
+
+							<section class="English-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">English</h3>
+								<div class="item mb-3">
+									<div class="item-heading row align-items-center mb-2">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">A2 - (Elementary English)</h4>
+									</div>
+								</div><!--//item-->
+							</section><!--//Enblish-section-->	
+						</div><!--//resume-main-->
+							</div><!--//row-->
+						</div><!--//resume-body-->
+						<hr>
+						<div class="resume-footer text-center">
+							<ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+								<li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://github.com/Deadricss5/rsschool-cv"><i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">Deadricss5</span></a></li>
+							</ul>
+						</div><!--//resume-footer-->
+					</article>
+					
+				</div><!--//container-->
+			</div><!--//main-wrapper-->
+			
+
+</body>
+</html> 
+
